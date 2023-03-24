@@ -1,5 +1,6 @@
 # Portafolio_aplicaciones_graficas
 Portafolio de todas las actividades de dicha materia.
+<br>
 1 Banner sobre mi.
 <br>
 2 Crear prototipado en Adobe Photoshop para vista movil.
