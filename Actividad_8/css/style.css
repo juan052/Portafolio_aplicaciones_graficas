@@ -1,0 +1,258 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    background: #ffff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 200px;
+}
+
+.nav-item-1 {
+    display: flex;
+}
+
+.nav-elements {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.nav-elements li:hover {
+    background-color: #ddd;
+    color: #000;
+    box-shadow: 0 0 10px rgb(255, 255, 0);
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+/* Banner */
+.img-1 {
+    background-image: url(../img/habitacion_1.jpg);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0%;
+    padding: 0%;
+    opacity: .8;
+}
+
+.img-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 250px;
+}
+
+.form-main>form>input {
+    width: 350px;
+    height: 40px;
+    border: none;
+    margin: 0;
+    border-radius: 5px;
+    display: inline;
+}
+
+.form-main>form>button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    margin: 0;
+    background: #2d2b2b;
+    color: white;
+    border-radius: 5px;
+}
+
+.text {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bolder;
+    color: white;
+}
+
+/* Article */
+p {
+    text-align: justify;
+}
+
+.article {
+    display: flex;
+    gap: 20px;
+    margin: 0px 250px;
+    padding: 80px 0px;
+}
+
+.article>div>img {
+    width: 500px;
+    height: 300px;
+}
+
+.article>div>h3 {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0;
+}
+
+/* text 2 */
+.text-2 {
+    background: #2d2b2b;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.article-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+article>div>ul>li {
+    list-style: outside;
+    margin-left: 20px;
+}
+
+/* Footer */
+
+.banner-footer {
+    width: 1800px;
+    height: 320px;
+    object-fit: cover;
+}
+
+footer {
+    background: #2d2b2b;
+    color: white;
+    width: 100%;
+    padding: 40px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 40px;
+}
+
+.footer-item-1,
+.footer-item-2,
+.footer-item-3 {
+    margin-left: 60px;
+}
+
+.footer-item-1 a,
+.footer-item-2 a,
+.footer-item-3 a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-item-1 a:hover,
+.footer-item-2 a:hover,
+.footer-item-3 a:hover {
+    color: #d7d7d7;
+}
+
+.footer-item-1 i,
+.footer-item-2 i,
+.footer-item-3 i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.img-footer {
+    background-image: url(../img/habitacion_5.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        margin: 0px 100px;
+    }
+
+    .img-main {
+        margin: 0px 150px;
+    }
+
+    .article {
+        margin: 0px 150px;
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 0px;
+    }
+
+    .article>div>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin: 0px 50px;
+    }
+
+    .img-main {
+        margin: 0px 100px;
+    }
+
+    .article {
+        margin: 0px 100px;
+        padding: 20px 0px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 20px;
+    }
+
+    .nav-elements {
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0px;
+    }
+
+    .img-main {
+        margin: 0px 50px;
+    }
+
+    .article {
+        margin: 0px 50px;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
