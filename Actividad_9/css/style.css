@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #093A3E;
+    --color-primary-dark: #001011;
+
+    --color-secondary: #64E9EE;
+    --color-secondary-logo:#F1C40F;
+
+    --color-gray-light:white;
+    --color-gray: #ccc;
+    --color-gray-dark: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border-radius: 10px;
+    width:20%;
+    height: 50%;
+}
+
+aside {
+    flex: 30%;
+    background-color: var(--color-gray-dark);
+    padding: 20px;
+}
+
+aside h2,
+aside h3 {
+    color: var(--color-gray-light);
+}
+.nombre
+{
+    background-color:var(--color-secondary-logo);
+}
+.video-link img {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.video-link h4 {
+    opacity: 0;
+    position: absolute;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    transition: all 0.2s;
+}
+
+.video-link:hover h4 {
+    opacity: 1;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.main h2 {
+    text-transform: uppercase;
+    margin-top: 40px;
+    color: var(--color-primary);
+}
+
+.main img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.main .read-more {
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    margin-right: 20px;
+    background-color: var(--color-primary);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main .read-more:hover {
+    background-color: var(--color-primary-dark);
+}
+
+#more-posts {
+    display: block;
+    color: var(--color-primary);
+    margin-top: 40px;
+    text-align: center;
+}
+
+#more-posts:hover {
+    color: var(--color-primary-dark);
+}
+
+.flip-card {
+    perspective: 80px;
+}
+
+.flip-card-inner {
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.lineamar{
+    padding-top: 80%;
+    color: #F1C40F;
+}
+.flip-card-back {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 20%;
+    background-color: var(--color-primary);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    padding: 25px;
+    font-size: 1vw;
+}
+
+.flip-card-back h2 {
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .flip-card-back {
+        font-size: 3vw;
+    }
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+
+    .row,
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+.cards {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    background: var(--color-gray);
+    grid-gap: 2rem;
+    padding: 2rem;
+    perspective: 1000px;
+}
+
+.framework-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+    padding-top: 3rem;
+    position: relative;
+    transform-origin: top center;
+    --rotate: 10deg;
+    transform: rotateX(var(--rotate));
+    transition: transform 0.2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.framework-card:before {
+    right: auto;
+    left: 20px;
+}
+
+.framework-card:hover {
+    transform: rotateX(-20deg);
+}
+
+.cards:before,
+.framework-card:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #5c0dac;
+    border: 1px solid #000;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    top: 15px;
+    right: 20px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.framework-card:before,
+.framework-card:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #5c0dac;
+    border: 1px solid #000;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    top: 15px;
+    right: 20px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.framework-card img {
+    height: 80px;
+    width: 100%;
+    object-fit: contain;
+}
+
+img {
+    max-width: 100%;
+}
+
+.framework-card p {
+    font-family: 'radnika-next';
+    font-weight: 900;
+}
