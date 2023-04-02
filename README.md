@@ -14,3 +14,7 @@ Portafolio de todas las actividades de dicha materia.
 6 Crear cv en html.
 <br>
 7 Landing Page con html y css.
+<br>
+8 Landing Page con diseño del profesor.
+<br>
+9 Cv mejorado.
